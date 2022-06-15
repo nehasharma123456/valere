@@ -2,7 +2,7 @@
   "name": "valere",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nehasharma123456.github.io",
+  "homepage": "https://nehasharma123456.github.io/valere",
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.25",
     "@rooks/use-window-size": "^4.11.2",
@@ -49,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
