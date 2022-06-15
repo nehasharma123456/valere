@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.content1 {
+	max-width: 650px;
+	margin: 0 auto;
+	top: 35%;
+	position: relative;
+}
+
+
+
+
+/* PRELOADER CSS */
+.page-loader{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background: #000;
+	z-index: 1000;
+}
+	.txt{
+		color: #fff;
+		text-align: center;
+		top: 40%;
+		position: relative;
+		text-transform: uppercase;
+		letter-spacing: 0.3rem;
+		font-weight: bold;
+		line-height: 1.5;
+    font-size: 40px;
+    width: 80%;
+    margin: 0px auto;
+	}
+
+
+/* SPINNER ANIMATION */
+.spinner {
+	position: relative;
+	top: 35%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #fff;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+
+h1.fadeInInitial span{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInInitial 0.5s ease-out forwards;
+  display:inline-block;
+}
+h1.fadeInInitial span:nth-of-type(1){
+  animation-delay: 0.2s;
+}
+
+h1.fadeInInitial span:nth-of-type(2){
+  animation-delay: 0.5s;
+}
+
+h1.fadeInInitial span:nth-of-type(3){
+  animation-delay: 1s;
+}
+
+h1.fadeInInitial span:nth-of-type(4){
+  animation-delay: 1.5s;
+}
+
+h1.fadeInInitial span:nth-of-type(5){
+  animation-delay: 2s;
+}
+
+@keyframes fadeInInitial{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+#section1 {
+  color: #fff;
+}
+
