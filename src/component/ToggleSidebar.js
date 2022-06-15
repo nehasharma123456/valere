@@ -26,7 +26,7 @@ export default function ToggleSidebar() {
                       
                             <div className="form-inline ml-auto">
                             <button type="button" class="btn btn-contact" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Contact Us
+  ContactUs
 </button>
 
                            
