@@ -44,7 +44,7 @@ class Home extends React.Component {
                 <Second/>
               </div>
               <div className="section">
-              <VideoSection video="./Videos/ppn (1).mp4" textpartical={<Textpartical textimage="./Images/sukhi.png"/>}  para="Valere helped PrePay Nation, a fintech company with 600 operators globally, design and build their one-stop application for topping-up prepaid mobile and landline services. Modern and engaging, the Telem app is used by millions of people worldwide to make it easier to add credit or a data plan to any Telem prepaid phone."/>
+              <VideoSection video="./Videos/ppn (1).mp4" textpartical={<Textpartical textimage="{process.env.PUBLIC_URL+'images/logo.png'}./Images/sukhi.png"/>}  para="Valere helped PrePay Nation, a fintech company with 600 operators globally, design and build their one-stop application for topping-up prepaid mobile and landline services. Modern and engaging, the Telem app is used by millions of people worldwide to make it easier to add credit or a data plan to any Telem prepaid phone."/>
                 
               </div>
               <div className="section">
