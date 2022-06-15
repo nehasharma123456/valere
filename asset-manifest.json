@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/valere/static/css/main.86b7a795.css",
-    "main.js": "/valere/static/js/main.c6e2ba38.js",
+    "main.js": "/valere/static/js/main.fdaec91e.js",
     "static/js/787.9002beaf.chunk.js": "/valere/static/js/787.9002beaf.chunk.js",
     "static/media/logo.svg": "/valere/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/valere/index.html",
     "main.86b7a795.css.map": "/valere/static/css/main.86b7a795.css.map",
-    "main.c6e2ba38.js.map": "/valere/static/js/main.c6e2ba38.js.map",
+    "main.fdaec91e.js.map": "/valere/static/js/main.fdaec91e.js.map",
     "787.9002beaf.chunk.js.map": "/valere/static/js/787.9002beaf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86b7a795.css",
-    "static/js/main.c6e2ba38.js"
+    "static/js/main.fdaec91e.js"
   ]
 }
