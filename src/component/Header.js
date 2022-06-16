@@ -15,9 +15,9 @@ export default function Header() {
     <Router>
     <ToggleSidebar/>
     <Routes>
-      <Route path='/' element={<Home />}/>
-      <Route path='/blog' element={<Blog />}/>
-      <Route path='/ourwork' element={<OurWork />}/>
+      <Route exact path='/' element={<Home/>}/>
+      <Route exact path='/blog' element={<Blog/>}/>
+      <Route exact path='/ourwork' element={<OurWork/>}/>
     </Routes>
     </Router>
   )
