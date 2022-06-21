@@ -3,21 +3,21 @@ import React from "react";
 import ReactDOM from "react-dom";
 //import "fullpage.js/vendors/scrolloverflow"; // Optional. When using scrollOverflow:true
 import ReactFullpage from "@fullpage/react-fullpage";
-import Firstscreen from './Firstscreen';
-import Second from './Second';
-import VideoSection from './VideoSection';
-import VideoSectionInverted from './VideoSectionInverted';
+import Firstscreen from "./Firstscreen";
+import Second from "./Second";
+import VideoSection from "./VideoSection";
+import VideoSectionInverted from "./VideoSectionInverted";
 import Contact from "./Contact";
 import Textpartical from "./Textpartical";
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json))
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
 
 class Home extends React.Component {
-  constructor (props) {
-    super(props)
-   
+  constructor(props) {
+    super(props);
   }
   onLeave(origin, destination, direction) {
     console.log("Leaving section " + origin.index);
@@ -28,7 +28,6 @@ class Home extends React.Component {
   render() {
     return (
       <ReactFullpage
-       
         scrollOverflow={false}
         // sectionsColor={["orange", "purple", "green"]}
         onLeave={this.onLeave.bind(this)}
@@ -37,29 +36,45 @@ class Home extends React.Component {
           return (
             <div id="fullpage-wrapper">
               <div className="section section1">
-              <Firstscreen/>
-              </div>
-              
-              <div className="section">
-                <Second/>
-              </div>
-              <div className="section">
-              <VideoSection video="./Videos/ppn (1).mp4" textpartical={<Textpartical textimage="./Images/sukhi.png"/>}  para="Valere helped PrePay Nation, a fintech company with 600 operators globally, design and build their one-stop application for topping-up prepaid mobile and landline services. Modern and engaging, the Telem app is used by millions of people worldwide to make it easier to add credit or a data plan to any Telem prepaid phone."/>
-                
-              </div>
-              <div className="section">
-              <VideoSectionInverted video="./Videos/vind.mp4" textpartical={<Textpartical textimage="./Images/VIND.png"/>}   para="Valere helped PrePay Nation, a fintech company with 600 operators globally, design and build their one-stop application for topping-up prepaid mobile and landline services. Modern and engaging, the Telem app is used by millions of people worldwide to make it easier to add credit or a data plan to any Telem prepaid phone."/>
-                
-              </div>
-              <div className="section">
-              <VideoSection video="./Videos/ppn (1).mp4" textpartical={<Textpartical textimage="./Images/VIND.png"/>}  para="Valere helped PrePay Nation, a fintech company with 600 operators globally, design and build their one-stop application for topping-up prepaid mobile and landline services. Modern and engaging, the Telem app is used by millions of people worldwide to make it easier to add credit or a data plan to any Telem prepaid phone."/>
-                
-              </div>
-              <div className="section">
-             <Contact/>
-                
+                <Firstscreen />
               </div>
 
+              <div className="section">
+             <Second/>
+                
+              </div>
+              <div className="section">
+                <VideoSection
+                  video={process.env.PUBLIC_URL + "/Videos/ppn (1).mp4"}
+                  textpartical={
+                    <Textpartical
+                      textimage={process.env.PUBLIC_URL + "/Images/sukhi.png"}
+                    />
+                  }
+                  para="Valere helped PrePay Nation, a fintech company with 600 operators globally, design and build their one-stop application for topping-up prepaid mobile and landline services. Modern and engaging, the Telem app is used by millions of people worldwide to make it easier to add credit or a data plan to any Telem prepaid phone."
+                />
+              </div>
+              <div className="section">
+                <VideoSectionInverted
+                  video={process.env.PUBLIC_URL + "/Videos/vind.mp4"}
+                  textpartical=
+                  {<Textpartical 
+                  textimage={process.env.PUBLIC_URL + "/Images/VIND.png"} />}
+                  para="Valere helped PrePay Nation, a fintech company with 600 operators globally, design and build their one-stop application for topping-up prepaid mobile and landline services. Modern and engaging, the Telem app is used by millions of people worldwide to make it easier to add credit or a data plan to any Telem prepaid phone."
+                />
+              </div>
+              <div className="section">
+                <VideoSection
+                  video={process.env.PUBLIC_URL + "/Videos/nft.mp4"}
+                  textpartical=
+                  {<Textpartical 
+                  textimage={process.env.PUBLIC_URL + "/Images/VALE.svg"}/>}
+                  para="Valere helped PrePay Nation, a fintech company with 600 operators globally, design and build their one-stop application for topping-up prepaid mobile and landline services. Modern and engaging, the Telem app is used by millions of people worldwide to make it easier to add credit or a data plan to any Telem prepaid phone."
+                />
+              </div>
+              <div className="section">
+                <Contact />
+              </div>
             </div>
           );
         }}
@@ -69,6 +84,3 @@ class Home extends React.Component {
 }
 
 export default Home;
-
-
-

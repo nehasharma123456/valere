@@ -44,7 +44,7 @@ export default function Firstscreen() {
   return (
       <div>
      
-    <Canvas orthographic camera={{ zoom: 5 }} colorManagement={false} style={{height:'100vh' ,width:"100vw"}}>
+    <Canvas orthographic camera={{ zoom: 5 }} colormanagement="false" style={{height:'100vh' ,width:"100vw"}}>
       <color attach="background" args={['#002147']} />
       
       <Dots />
